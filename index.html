@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unsplash Api Car Gallery</title>
+</head>
+
+<body>
+    <!-- My header here is just for presentation-->
+    <header>
+        <h1> Fancy Car Gallery</h1>
+    </header>
+    <div id="img-box">
+        <!-- Populating this div with images from my unsplash api call-->
+    </div>
+    <footer>
+        <p id="footer-text">
+            <span style="text-decoration:underline;">
+                Designed & Developed by:
+            </span>
+            Lorem, ipsum.
+        </p>
+    </footer>
+    <script>
+        // random color
+        console.clear()
+        const randomColor = () => {
+            const hexCode = '123456789ABCDEF';
+            let colorHash = '#';
+            for (let i = 0; i < 6; i++) {
+                colorHash += hexCode[Math.floor(Math.random() * 16)];
+                // console.log(colorHash)
+            }
+            return colorHash;
+        }
+
+        setInterval(() => {
+            // document.body.style.backgroundColor = randomColor();
+        }, 1000);
+    </script>
+
+    <script src="/api/script.js"></script>
+</body>
+
+</html>
